@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "a.marlongwira.vishal_launcher"
+        applicationId "a.vishalVarghese.vishal_launcher"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1

@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/welcomeText"
             android:layout_marginLeft="45dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="290dp"
             android:text="START"/>
             <!--android:layout_alignLeft="@id/fast_button"-->
             <!--android:layout_below="@id/fast_button"-->
