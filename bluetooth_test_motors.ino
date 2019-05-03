@@ -2,8 +2,6 @@
 #include <Servo.h>
 
 //FINAL YEAR PROJECT
-//TODO: Give a short description of what the code does
-//P.S. Feel free to edit my code the code and especially the syntax of my comments
 
 Servo myservo;  // creating object for the two servos
 Servo myservo2;
@@ -36,7 +34,6 @@ void setup()
   pinMode(12, OUTPUT);        //Sets digital pin 12 as output pin
   myservo.attach(servoPin);   // attaches the servo on pin 3 and 5 to the servo objects
   myservo2.attach(servoPin2);                            
- 
   pinMode(motor1Pin1, OUTPUT); //Setting pins of the motors to output
   pinMode(motor1Pin2, OUTPUT);
   pinMode(enable1Pin_right_motor, OUTPUT);
@@ -58,7 +55,7 @@ void loop()
     Serial.print("\n");              //New line 
     if(Incoming_value == 's')        //Checks whether value of Incoming_value is equal to s (when the start button is pressd from the app)
     {           
-      motors_at_top_speed();
+      motors_at_transition();
       delay(100);
 
      
@@ -204,7 +201,7 @@ void stop_fire()
   
 }
 
-void motors_at_top_speed()
+void motors_at_transition()
 {
   analogWrite(enable1Pin_right_motor, 240);
   analogWrite(enable1Pin_left_motor, 240);
@@ -218,46 +215,46 @@ void motors_off()
 
 void position_1()
 {
-  analogWrite(enable1Pin_right_motor, 100);
-  analogWrite(enable1Pin_left_motor, 240);
+  analogWrite(enable1Pin_right_motor, 150);
+  analogWrite(enable1Pin_left_motor, 255);
 }
 void position_2()
 {
-  analogWrite(enable1Pin_right_motor, 240);
-  analogWrite(enable1Pin_left_motor, 240);
+  analogWrite(enable1Pin_right_motor, 255);
+  analogWrite(enable1Pin_left_motor, 255);
 }
 void position_3()
 {
-  analogWrite(enable1Pin_right_motor, 240);
-  analogWrite(enable1Pin_left_motor, 100);
+  analogWrite(enable1Pin_right_motor, 255);
+  analogWrite(enable1Pin_left_motor, 150);
 }
 void position_4()
 {
-  analogWrite(enable1Pin_right_motor, 170);
+  analogWrite(enable1Pin_right_motor, 150);
   analogWrite(enable1Pin_left_motor, 100);
 }
 void position_5()
 {
-  analogWrite(enable1Pin_right_motor, 170);
-  analogWrite(enable1Pin_left_motor, 170);
+  analogWrite(enable1Pin_right_motor, 150);
+  analogWrite(enable1Pin_left_motor, 150);
 }
 void position_6()
 {
   analogWrite(enable1Pin_right_motor, 100);
-  analogWrite(enable1Pin_left_motor, 170);
+  analogWrite(enable1Pin_left_motor, 150);
 }
 void position_7()
 {
-  analogWrite(enable1Pin_right_motor, 130);
-  analogWrite(enable1Pin_left_motor, 100);
+  analogWrite(enable1Pin_right_motor, 80);
+  analogWrite(enable1Pin_left_motor, 50);
 }
 void position_8()
 {
-  analogWrite(enable1Pin_right_motor, 130);
-  analogWrite(enable1Pin_left_motor, 130);
+  analogWrite(enable1Pin_right_motor, 65);
+  analogWrite(enable1Pin_left_motor, 65);
 }
 void position_9()
 {
-  analogWrite(enable1Pin_right_motor, 100);
-  analogWrite(enable1Pin_left_motor, 130);
+  analogWrite(enable1Pin_right_motor, 60);
+  analogWrite(enable1Pin_left_motor, 90);
 }
