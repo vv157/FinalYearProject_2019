@@ -16,7 +16,16 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.UUID;
 
+<<<<<<< HEAD:Launcher2/app/src/main/java/com/final_year_project/launcher/MainActivity.java
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
+=======
+//This app is part of a university project toward my final year Degree.
+//It integrates with the functionality of the project, which is controlling the
+//main functionality of the launcher with the app.
+
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+>>>>>>> f268520b748e9a7b99dd5b0c7c20b68bdb1b606f:launcher_app/app/src/main/java/a/marlongwira/vishal_launcher/MainActivity.java
 
     //Inputs declarations of the imageViews that represent the zones to fire to
     ImageView direction_1;
@@ -28,7 +37,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     ImageView direction_7;
     ImageView direction_8;
     ImageView direction_9;
+<<<<<<< HEAD:Launcher2/app/src/main/java/com/final_year_project/launcher/MainActivity.java
     //This input declarations to start/stop motors
+=======
+    //This input declarations to start stop motors
+>>>>>>> f268520b748e9a7b99dd5b0c7c20b68bdb1b606f:launcher_app/app/src/main/java/a/marlongwira/vishal_launcher/MainActivity.java
     //and execute firing.
     Button stop_btn;
     Button start_btn;
@@ -40,6 +53,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     TextView t1;
     String address = null , name=null;
+<<<<<<< HEAD:Launcher2/app/src/main/java/com/final_year_project/launcher/MainActivity.java
     //    Creating default bluetooth adapter object
     BluetoothAdapter myBluetooth = null;
     //    Creating bluetooth socket object
@@ -48,6 +62,16 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     Set<BluetoothDevice> pairedDevices;
     //    UUID (Universal Unique Identifier). This specifies an ID to that the client
 //    in this case the HC05 can identify the phone to allow a connection.
+=======
+//    Creating default bluetooth adapter object
+    BluetoothAdapter myBluetooth = null;
+//    Creating bluetooth socket object
+    BluetoothSocket btSocket = null;
+//    Variable that stores the paired devices
+    Set<BluetoothDevice> pairedDevices;
+//    UUID (Universal Unique Identifier). This specifies an ID to that the client
+//    in this case the ESP32 can identify the phone to allow a connection.
+>>>>>>> f268520b748e9a7b99dd5b0c7c20b68bdb1b606f:launcher_app/app/src/main/java/a/marlongwira/vishal_launcher/MainActivity.java
     static final UUID myUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
     @Override
@@ -309,7 +333,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     }
 
+<<<<<<< HEAD:Launcher2/app/src/main/java/com/final_year_project/launcher/MainActivity.java
 // This function enables the bluetooth connection between the app and the HC05.
+=======
+// This function enables the bluetooth connection between the app and the ESP32.
+>>>>>>> f268520b748e9a7b99dd5b0c7c20b68bdb1b606f:launcher_app/app/src/main/java/a/marlongwira/vishal_launcher/MainActivity.java
 //    It checks if there are any paired devices and sends a message once a connection is
 //    established along with the name of the paired device and the Address.
 
@@ -354,7 +382,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
 
     }
+<<<<<<< HEAD:Launcher2/app/src/main/java/com/final_year_project/launcher/MainActivity.java
     // This function allows the app to send string messages via the bluetooth socket in Bytes.
+=======
+// This function allows the app to send string messages via the bluetooth socket in Bytes.
+>>>>>>> f268520b748e9a7b99dd5b0c7c20b68bdb1b606f:launcher_app/app/src/main/java/a/marlongwira/vishal_launcher/MainActivity.java
 //  and displays an error message if the message was not able to be sent.
     private void send_message(String i)
     {

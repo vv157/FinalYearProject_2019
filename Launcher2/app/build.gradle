@@ -3,8 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
+<<<<<<< HEAD:Launcher2/app/build.gradle
         applicationId "com.final_year_project.launcher"
         minSdkVersion 27
+=======
+        applicationId "a.vishalVarghese.vishal_launcher"
+        minSdkVersion 21
+>>>>>>> f268520b748e9a7b99dd5b0c7c20b68bdb1b606f:launcher_app/app/build.gradle
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
